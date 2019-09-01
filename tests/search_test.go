@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	emoji "github.com/tmdvs/Go-Emoji-Utils"
+	emoji "github.com/omer5985/Go-Emoji-Utils"
 )
 
 func BenchmarkSearch(b *testing.B) {

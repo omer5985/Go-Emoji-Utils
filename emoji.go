@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/omer5985/Go-Emoji-Utils/utils"
 	"github.com/omer5985/Go-Emoji-Utils/data"
+	"github.com/omer5985/Go-Emoji-Utils/utils"
 )
 
 // Emoji - Struct representing Emoji
