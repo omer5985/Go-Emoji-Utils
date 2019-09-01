@@ -1,3 +1,6 @@
+package data
+
+var EmojiData = `
 {
 	"1F004": {
 		"key": "1F004",
@@ -13880,3 +13883,4 @@
 		"descriptor": "Registered"
 	}
 }
+`
