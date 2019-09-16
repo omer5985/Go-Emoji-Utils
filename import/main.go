@@ -1,3 +1,5 @@
+//+build updatePackage
+
 package main
 
 // Import emoji data from Emojipedia.org
@@ -99,5 +101,9 @@ func main() {
 
 	// Marshal the emojis map as JSON and write to the data directory
 	s, _ := json.MarshalIndent(emojis, "", "\t")
-	ioutil.WriteFile("data/emoji.json", []byte(s), 0644)
+	prefix := []byte("package data\n\n	var EmojiData = `\n")
+	s = append(prefix, s...)
+	s = append(s, []byte("`")...)
+
+	ioutil.WriteFile("data/emoji.go", []byte(s), 0644)
 }
